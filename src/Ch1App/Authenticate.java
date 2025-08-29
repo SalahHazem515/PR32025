@@ -8,8 +8,7 @@ package Ch1App;
  *
  * @author HP
  */
-public interface Person {
+public interface Authenticate<T, C> {
 
-    @Override
-    public String toString();
+    T check(C value1, C value2);
 }

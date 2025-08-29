@@ -19,6 +19,16 @@ public class MainApp {
             new Student("Ali", "CS", 79.8)
         };
         show(persons);
+
+        Authenticate<Boolean, String> authenticate = (userName, password) -> {
+            if (userName.equals("salah") && password.equals("99886")) {
+                return true;
+            } else {
+                return false;
+            }
+        };
+
+        System.out.println(authenticate.check("salah", "99886"));
     }
 
     public static <T> void show(T data[]) {
