@@ -43,13 +43,10 @@ public class KiloConverter extends Application {
         HBox h1 = new HBox(10, viewResult, convertButton);
         h1.setAlignment(Pos.CENTER);
 
-        VBox v2 = new VBox(10, v1, h1);
-        v2.setAlignment(Pos.CENTER);
-
-        FlowPane f1 = new FlowPane(v2);
+        FlowPane f1 = new FlowPane(v1, h1);
         f1.setAlignment(Pos.CENTER);
 
-        Scene scene = new Scene(f1, 200,200);
+        Scene scene = new Scene(f1, 200, 200);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Kilo Meters Convert");
         primaryStage.show();
