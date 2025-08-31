@@ -85,6 +85,7 @@ public class MainApp extends Application {
 
         // تأكد دايما إنو كل الاستدعاءات من JavaFx
         Scene s1 = new Scene(f1, 400, 300); //بضيف على المشهد
+        s1.getStylesheets().add(getClass().getResource("mainStyle.css").toExternalForm()); //بضيف ملف css 
         primaryStage.setScene(s1); // بضيف على المسرح
         primaryStage.setTitle("Login Screen");
         primaryStage.show();

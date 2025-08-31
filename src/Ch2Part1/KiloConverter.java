@@ -43,7 +43,7 @@ public class KiloConverter extends Application {
         HBox h1 = new HBox(10, viewResult, convertButton);
         h1.setAlignment(Pos.CENTER);
 
-        FlowPane f1 = new FlowPane(v1, h1);
+        FlowPane f1 = new FlowPane(10, 10, v1, h1);
         f1.setAlignment(Pos.CENTER);
 
         Scene scene = new Scene(f1, 200, 200);
