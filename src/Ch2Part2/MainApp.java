@@ -45,6 +45,8 @@ public class MainApp extends Application {
 
         textFieldName = new TextField();
         textFieldName.setPromptText("Enter The Name");
+        textFieldName.setMinWidth(150);
+        textFieldName.setMaxWidth(150);
 
         checkBoxName = new CheckBox("Select All");
         checkBoxName.setOnAction(e -> {
