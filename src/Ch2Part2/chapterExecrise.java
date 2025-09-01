@@ -52,6 +52,7 @@ public class chapterExecrise extends Application {
             File fileSelected = filechooser1.showOpenDialog(primaryStage);
 
             try (Scanner scanner = new Scanner(fileSelected)) {
+                textArea1.setText("");
                 while (scanner.hasNext()) {
                     textArea1.appendText(scanner.nextLine()+ "\n");
                 }
