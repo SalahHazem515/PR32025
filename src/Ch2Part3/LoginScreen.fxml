@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-front-size: 14; -fx-font-weight: bold;" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ch2Part3.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="340.0" prefWidth="393.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="162.0" prefWidth="356.0" spacing="15.0">
+               <children>
+                  <Label prefHeight="53.0" prefWidth="125.0" text="Login Information" />
+                  <TextField fx:id="textFieldLogIn" prefHeight="41.0" prefWidth="341.0" />
+                  <PasswordField fx:id="userPassword" prefHeight="27.0" prefWidth="168.0" />
+                  <Label fx:id="outputLabel" prefHeight="33.0" prefWidth="78.0" text="Initial Text" />
+               </children>
+            </VBox>
+            <HBox alignment="CENTER" prefHeight="81.0" prefWidth="573.0" spacing="15.0">
+               <children>
+                  <Button fx:id="submitButton" mnemonicParsing="false" onAction="#handleButtonSubmit" prefHeight="56.0" prefWidth="82.0" text="Submit" />
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#handleButtonCancel" prefHeight="56.0" prefWidth="82.0" text="Cancel" />
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <InnerShadow choke="0.21" height="35.66" radius="44.44" width="144.1">
+               <color>
+                  <Color red="0.5263158082962036" green="0.23391813039779663" blue="0.23391813039779663" />
+               </color>
+            </InnerShadow>
+         </effect>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</FlowPane>
