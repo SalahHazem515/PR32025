@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<FlowPane alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ch3.TextAreaPaneController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="672.0" prefWidth="733.0" spacing="15.0" style="-fx-background-color: coral;">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <TextArea fx:id="textArea1" prefHeight="495.0" prefWidth="705.0" style="-fx-text-fill: darkred;" text="Initial Text">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <children>
+                  <Button fx:id="showButton" mnemonicParsing="false" onAction="#handleShowAction" prefHeight="57.0" prefWidth="162.0" style="-fx-background-color: gold;" text="Show">
+                     <font>
+                        <Font name="Calibri Bold" size="23.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</FlowPane>
